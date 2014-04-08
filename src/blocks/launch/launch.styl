@@ -1,0 +1,177 @@
+.launch
+	background url("i/skin/bg.png") center top #f3f3f3
+	&__header
+		padding 30px 0
+		clearfix()
+	&__footer
+		padding 20px 0
+		clearfix()
+	&__content
+		background-color white
+		background-color rgba(255, 255, 255, .6)
+		padding 40px 30px
+		p
+			color #595959
+			font-size 24px
+			font-weight bold
+			margin 0
+			text-align center
+			a
+				color #2f9a41
+				text-decoration none
+				text-transform uppercase
+				letter-spacing 2px
+				&:hover
+					text-decoration underline
+	&__logo
+		float left
+		img
+			width 201px
+			height 51px
+			border 0 none
+		&_small
+			img
+				width 84px
+				height 21px
+	&__title
+		font-size 36px
+		letter-spacing 3px
+		text-transform uppercase
+		text-align right
+		font-weight normal
+		margin 0
+		padding 8px 0 0
+		color #595959 
+	&__copyright
+		padding 3px 0 0 
+		text-align right
+	&__form
+	&__carousel
+		height 310px
+	&__form, &__carousel
+		&:before
+			content ""
+			position absolute
+			bottom 9px
+			left 10%
+			width 80%
+			height 0
+			box-shadow 0 0 25px 10px #3c5c41
+	&__form
+		position relative
+		form
+			position relative
+			height 310px
+			background url("i/skin/bg-green.png") center top #298a3a
+			padding 35px 25px 0
+		&-title, &-text
+			text-align center
+		&-title
+			font-size 28px
+			line-height 32px
+			color #fff
+		&-text
+			margin-bottom 35px
+			font-size 16px
+			line-height 20px
+			color #94c49c
+		&-message
+			text-align center
+			&-icon
+				margin 10px 0 25px
+				img
+					width 100px
+					height 81px
+			.launch__form-title
+				margin-bottom 35px
+		.form-group
+			margin-bottom 40px
+		.error-message
+			display none
+			position absolute
+			left 15px
+			top 100%
+			width 90%
+			margin-top 4px
+			font-size 14px
+			line-height 18px
+			color #94c49c
+		.has-error
+			input
+				background-color #ffd9d9
+				color #c10202
+			.error-message
+				display block
+		input
+			width 100%
+			height 40px
+			padding 9px 12px
+			font-size 16px
+			line-height 20px
+			background-color #fff
+			border 0 none
+		button
+			width 100%
+			padding 16px 12px 12px
+			font-size 18px
+			line-height 22px
+			font-weight bold
+			color #000
+			text-transform uppercase
+			letter-spacing .75pt
+			border-radius 4px
+			border 0 none
+			background linear-gradient(top, #ffeb09, #ffae00)
+			box-shadow 0 7px 7px rgba(0, 0, 0, 0.3), 0 1px 0 #f1f183 inset
+			&:hover
+				background linear-gradient(top, #ffee00, #ffc100)
+			&:active
+				background linear-gradient(top, #ffdd00, #ffae00)
+	&__carousel
+		position relative
+		&:before
+			bottom 7px
+			left 6%
+			width 88%
+			box-shadow 0 0 25px 10px #c2c9ce
+		&-inner
+			background #ffffff
+			height 310px
+		&-item
+			height 100%
+			position relative
+			padding 25px 0 0 257px 
+			&-image
+				position absolute
+				bottom 0
+				left 0
+				img
+					width 250px
+			&-title
+				font-size 32px
+				font-weight bold
+				color #000
+				line-height 53px
+				margin-bottom 30px
+			&-description
+				font-size 16px
+		&-selector
+			position absolute
+			bottom 35px !important
+			left 257px !important
+			margin 0 !important
+			padding 0 !important
+			width 100px !important
+			clearfix()
+			&-item
+				float left
+				margin 0 10px 0 0 !important
+				width 7px !important
+				height 7px !important
+				background-color #d5ebd9
+				cursor pointer
+				transition transform .2s ease
+				&:hover
+					transform scale(1.4)
+				&.active
+					background-color #2f9a41

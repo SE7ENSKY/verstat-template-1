@@ -1,0 +1,8 @@
+---
+group-css-media-queries: true
+cssmin: true
+---
+
+/*= require assets/styles/twitter-bootstrap */
+/*= require assets/styles/general */
+/*= require_tree blocks */

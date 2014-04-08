@@ -1,0 +1,65 @@
+body
+	font-family 'Proxima Nova', sans-serif
+	position relative
+	>header
+	>.content
+	>footer
+		position relative
+	>header
+		z-index 10
+	>.content
+		z-index 5
+	>footer
+		z-index 1
+hr
+	margin 15px 0 
+a
+	cursor pointer
+	transition color 0.1s ease
+	outline 0 none !important
+	&:focus
+		text-decoration none !important
+	&.dotted
+		text-decoration none
+		span
+			border-bottom 1px dotted
+		&:hover
+			text-decoration none
+			span
+				border-bottom 1px dotted inherit
+	&.blue
+		color #148cc1
+		&:hover
+			color #f26822
+	&.black
+		color #000
+		&:hover
+			color #25972a
+	&.grey
+		color #959595
+		&:hover
+			color #40b649
+	&.remove-link
+		color #9b9b9b
+		text-decoration none
+		&:hover
+			color red
+	&.phone-link
+		color #000
+		text-decoration none
+		&:hover
+			color #25972a
+
+.font-normal
+	font-weight normal !important
+
+.inline-block
+	display inline-block !important
+
+.text-left
+	text-align left !important
+
+.no-underline
+	text-decoration none
+	&:hover
+		text-decoration underline

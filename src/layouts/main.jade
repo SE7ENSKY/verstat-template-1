@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(content="user-scalable=no, width=device-width", name="viewport")
+		title
+			if file.title
+				| #{file.title} | #{site.title}
+			else
+				| #{site.title}
+		link(href=asset("i/favicon.ico"), rel="shortcut icon")
+		link(href=asset('f/proxima/proxima.css'), rel='stylesheet', type='text/css')
+		link(rel="stylesheet", href=asset("project.min.css"))
+		//if lt IE 9
+			script(src=asset("ie-js/html5.js"))
+			script(src=asset("ie-js/respond.min.js"))
+			script(src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js")
+	body
+		h1.sr-only= site.title
+		header.header
+			.container
+				| header
+		.content
+			.container
+				block content
+					!= content
+		footer.footer
+			.container
+				| footer
+		script(src=asset("project.min.js"))
+		if env == "dev"
+			+b.debug-bootstrap-grid: +i
+
